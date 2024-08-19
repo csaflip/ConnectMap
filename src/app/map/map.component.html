@@ -8,5 +8,12 @@
       
       </div>
     <button type="button" class="btn btn-primary" 
-    (click)="drawGpx()">Upload File</button>
+    (click)="drawGpx()">Upload File</button>  
+    <button type="button" class="btn btn-primary" 
+    (click)="parseGPX()">Parse GPX</button>
+    <button type="button" class="btn btn-primary" 
+    (click)="parseFIT()">Parse FIT</button>
+    <ul>Max Elevation: {{this.maxElevation}} ft</ul>
+    <ul>Total Distance: {{this.totalDistance}} miles</ul>
+
 </div>
