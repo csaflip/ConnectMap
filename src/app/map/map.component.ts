@@ -43,7 +43,13 @@ uploadDocument(file: any) {
 }
 
 drawGpx() {
-  new L.GPX(this.gpx, {async: true}).on('loaded', (e) => {
+  new L.GPX(this.gpx, {async: true,
+    polyline_options: {
+      color: 'red', // Change this to your desired color
+      weight: 5, // Optional: change the line weight
+      opacity: 0.75 // Optional: change the line opacity
+    }
+  }).on('loaded', (e) => {
     this.map.fitBounds(e.target.getBounds());
   }).addTo(this.map);
 }
