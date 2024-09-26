@@ -2,17 +2,20 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MapComponent } from './map/map.component';
 import * as L from 'leaflet';
+import { LogComponent } from './trip-log/trip-log.component';
+import { TitleBarComponent } from './title-bar/title-bar.component';
+import { MenuButtonComponent } from './menubutton/menubutton.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MapComponent],
+  imports: [RouterOutlet, MapComponent, LogComponent, TitleBarComponent, MenuButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'mapproject';
+  title = 'Colins Website';
 
   ngOnInit(): void {
     // const map = L.map('map').setView([39.718981, -105.138829], 16);

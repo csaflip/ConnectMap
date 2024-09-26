@@ -1,0 +1,18 @@
+.menubutton {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.menubutton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.menubutton:active {
+    background-color: #004085; /* Even darker blue on click */
+}
