@@ -3,8 +3,11 @@
     <div id="map"></div>
 
     <div class="Block">
-        <label id="lbl">Code </label>
-        <input type='file' (change)="fileChanged($event)">
+        <label id="lbl">GPX </label>
+        <input type='file' (change)="fileChanged($event, 'gpx')">
+        <label id="lbl">Fit </label>
+        <input type='file' (change)="fileChanged($event, 'fit')">
+
       
       </div>
     <button type="button" class="btn btn-primary" 
@@ -13,7 +16,10 @@
     (click)="parseGPX()">Parse GPX</button>
     <button type="button" class="btn btn-primary" 
     (click)="parseFIT()">Parse FIT</button>
-    <ul>Max Elevation: {{this.maxElevation}} ft</ul>
+    <ul>Max Elevation: {{this.maxElevation}} feet</ul>
     <ul>Total Distance: {{this.totalDistance}} miles</ul>
+    <ul>Total Elevation Gain: {{this.cumulativeElevationGain}} feet</ul>
+    <ul>Total Calories: {{this.totalCalories}} calories</ul>
+
 
 </div>
