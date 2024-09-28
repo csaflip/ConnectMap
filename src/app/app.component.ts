@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MapComponent } from './map/map.component';
 import * as L from 'leaflet';
 import { LogComponent } from './trip-log/trip-log.component';
@@ -10,7 +10,7 @@ import { MenuButtonComponent } from './menubutton/menubutton.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MapComponent, LogComponent, TitleBarComponent, MenuButtonComponent],
+  imports: [RouterOutlet, MapComponent, LogComponent, TitleBarComponent, MenuButtonComponent, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

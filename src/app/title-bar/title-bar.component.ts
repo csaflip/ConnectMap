@@ -10,5 +10,7 @@ import { MenuButtonComponent } from '../menubutton/menubutton.component';
 })
 export class TitleBarComponent {
   @Input() title: string = '';
-  buttonTitle: string = 'Menu';
+  buttonTitle: string = 'Home';
+  button2Title: string = 'Map'
+  button3Title: string = 'Log'
 }

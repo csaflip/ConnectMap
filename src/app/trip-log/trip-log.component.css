@@ -1,0 +1,7 @@
+.log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 10vh); /* Adjust this value to match the height of the title bar */
+}
